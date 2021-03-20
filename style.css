@@ -1,0 +1,57 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+.container h2 {
+    margin-bottom: 67px;
+    text-align: center;
+}
+.container hr {
+    color:gray;
+    margin-bottom: 34px;
+}
+
+.cards div:nth-child(1) {
+    grid-area:a
+}
+.cards div:nth-child(2) {
+    grid-area:b
+}
+.cards div:nth-child(3) {
+    grid-area:c
+}
+
+.cards {
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+  display:grid;
+ 
+
+  grid-gap:10px;
+}
+.cards img {
+    width:100%
+}
+
+@media (min-width:570px)
+  {
+    .cards {
+        grid-template-areas: 
+        "a b"
+        "c .";
+       
+       
+    } 
+}
+@media (min-width:920px)
+  {
+    .cards {
+        grid-template-areas:
+        "a b c";
+    
+       
+    } 
+}
