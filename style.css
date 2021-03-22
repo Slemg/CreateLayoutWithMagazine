@@ -1,13 +1,52 @@
+* {
+        font-family: 'Roboto', sans-serif;
+}
+table {
+  display: inline; 
+  max-height: 30px;
+}
 .container {
     max-width: 1440px;
     margin: 0 auto;
     
 }
+
+a {
+    opacity: 0; 
+}
+.buttons:hover a {
+    transition: all 0.5s;
+    opacity: 1;
+    cursor: pointer;
+    
+}
+.buttons {
+    position: relative;
+    text-align: center;
+}
+.men {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translate(-40%, -45%);
+    letter-spacing: 2px;
+    padding: 10px 50px 10px 50px;
+    background: white;
+}
+.women {
+    position: absolute;
+    top: 65%;
+    left: 46.5%;
+    transform: translate(-43.5%, -45%);
+    background:white;
+    letter-spacing: 2px;
+    padding: 10px 33px 10px 33px;
+}
 .container h2 {
     margin-bottom: 67px;
     text-align: center;
 }
-.container hr {
+.title {
     color:gray;
     margin-bottom: 34px;
 }
@@ -21,18 +60,32 @@
 .cards div:nth-child(3) {
     grid-area:c
 }
+.icon {
+    margin-left: 30px;
 
+}
 .cards {
     grid-template-areas: 
     "a"
     "b"
     "c";
   display:grid;
- 
-
-  grid-gap:10px;
+  grid-gap:20px;
 }
-.cards img {
+.cards hr {
+    width: 84%;
+    margin-bottom: 16px;
+}
+.signature {
+    margin-left: 70px;
+    transform: translateY(-44.5px);
+}
+
+
+.name {
+    margin-left: 30px;
+}
+.poster {
     width:100%
 }
 
