@@ -45,6 +45,7 @@ a {
 
 .men {
     position: absolute;
+    width: fit-content;
     top: 30%;
     left: 45%;
     transform: translate(-40%, -45%);
@@ -55,6 +56,7 @@ a {
 }
 .women {
     position: absolute;
+    width: fit-content;
     top: 65%;
     left: 46.5%;
     transform: translate(-43.5%, -45%);
